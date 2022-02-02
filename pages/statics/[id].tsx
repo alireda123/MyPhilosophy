@@ -16,21 +16,21 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async (context) => {
+export const getStaticProps = async (context: { params: { id: any; }; }) => {
   const id = context.params.id;
   const first = await fetch("https://jsonplaceholder.typicode.com/todos/" + id);
   const second = await first.json();
 
   return {
-    props: { todos: second },
+    props: { todos : second },
   };
 };
 
-const Details = ({ todos }) => {
+const Details = ({todos}) => {
   return (
     <>
       <h1>{todos.title}</h1>
-      <h1>{todos.completed}</h1>|
+      <h1>{todos.completed.toString()}</h1>
     </>
   );
 };
