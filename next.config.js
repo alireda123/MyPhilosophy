@@ -3,4 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  
+  nextConfig,
+  env: {
+      mongodburl: process.env.REACT_APP_DATABASE_URL,
+  }
+};
+
