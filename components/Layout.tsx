@@ -1,11 +1,9 @@
 import Navbar from "./Navbar";
-export default function Layout({children}) {
-   
-    return(
+export default function Layout({ children}) {
+  return (
     <div>
-        <Navbar />
-        {children}
+      <Navbar />
+      {children}
     </div>
-    );
+  );
 }
-
