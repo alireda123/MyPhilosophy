@@ -1,0 +1,18 @@
+.containerforpost{
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 900px;
+    height: 620px;
+    position: relative;
+    /* top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%) */
+    top: 100px;
+    left: 400px;
+
+}
+.textarea{
+    border-radius: 6px;
+    color: black;
+    
+}
